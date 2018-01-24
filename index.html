@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Creating True-to-scale models of the solar system</title>
+  <style>
+    body {
+      font-family: Arial;
+      font-size: 1.1em;
+    }
+
+    span {
+      border: 1px solid gray;
+      padding: 6px;
+    }
+
+    input {
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Creating a scale model of the solar system</h1>
+  <p>If you were to create a model of the solar system with accurate sizing and distance relationships, you would simply need
+    to divide all dimensions by a large number and then convert them to units we can work with.</p>
+  <p>Using the input box below divides the actual sizes of the Earth, the Sun, and the distance between and converts those numbers
+    to yards, inches, and millimeters.</p>
+  <p>
+    <i>Note: An accurate graphical representation cannot be displayed on a computer monitor. Making the Earth the size of a
+      single pixel would require placing the sun over 9 feet away.</i>
+  </p>
+  <input id="divisor" placeholder="enter numbers">
+  <h4>Results</h4>
+  <p>Sun Diameter:
+    <span id="sunSize"></span>
+  </p>
+  <p>Earth Diameter:
+    <span id="earthSize"></span>
+  </p>
+  <p>Mars Diameter:
+    <span id="marsSize"></span>
+  </p>
+  <p>Earth Distance from Sun:
+    <span id="earthDistance">
+    </span>
+  </p>
+  <p>Mars Distance from Sun:
+    <span id="marsDistance">
+    </span>
+  </p>
+  <h3>Interesting entries</h3>
+  <p>Copy and paste these numbers to see the results of some common sizes.</p>
+  <ul>
+    <li>Earth as a grain of salt (0.33mm): 39000000000</li>
+    <li>Earth as a pixel (0.264583 mm): 48211600000</li>
+    <li>Earth as a BB (4.5mm): 2835000000</li>
+    <li>Sun as a 22" inch bass drum: 2465000000</li>
+    <li>Sun as a basketball (9.55 inches): 5680000000</li>
+  </ul>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="solar-system.js"></script>
+</body>
+
+</html>
